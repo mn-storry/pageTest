@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .styledAdd input::autofill:active,
+        .styledAdd input:autofill,
+        .styledAdd input::autofill:focus,
+        .styledAdd input::autofill:hover,
+        .styledAdd input::-webkit-autofill,
+        .styledAdd input::-webkit-autofill:active,
+        .styledAdd input::-webkit-autofill:focus,
+        .styledAdd input::-webkit-autofill:hover {
+            -webkit-text-fill-color: #000;
+            -webkit-box-shadow: 0 0 0 1000px #fff inset;
+            box-shadow: 0 0 0 1000px #fff inset;
+            transition: background-color 5000s ease-in-out 0s;
+        }
+
+    </style>
+</head>
+<body>
+    <input type="text" placeholder="적용전"/>
+    <div class="styledAdd">
+      <input type="text"  placeholder="적용후" />
+    </div>
+</body>
+</html>
