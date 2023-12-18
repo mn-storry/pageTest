@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex</title>
+    <style>
+        html,
+        body {
+            height:100%;
+            margin:0;
+            padding:0;
+        }
+        .wrap {
+            display:flex;
+            flex-direction: column;
+            min-height:100%;
+            background: #0f0;
+        }
+        .top {
+            flex:1;
+            background-color:rgb(196, 255, 3);
+            font-weight:bold;
+        }
+        .middle {
+            flex:none;
+            font-size:20px;
+            background-color:#f0f;
+        }
+        .bottom {
+            position: sticky;
+            position: -webkit-sticky;
+            left:0;
+            bottom:0;
+            z-index: 10;
+            padding:10px;
+            flex:none;
+            background-color: chocolate;
+            color:#00f;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <main class="wrap">
+        <div class="top">
+            실명인증을 위해 고객 정보를 <br />
+            입력해 주세요.
+        </div>
+        <div class="middle">
+            이름<br />
+            주민등록번호<br />
+            휴대폰번호
+        </div>
+        <div class="bottom">
+            확인
+        </div>
+    </main>
+</body>
+</html>
