@@ -12,31 +12,26 @@
             padding:0;
         }
         body {
-            height: -webkit-fill-available;
-            height: fill-available;
+            height:100dvh;
         }
         .wrap {
             display:flex;
             flex-direction: column;
             min-height:100%;
             background: #0f0;
-            align-items: stretch;
         }
         .content {
             display:flex;
             flex-direction: column;
             flex:auto;
-            align-items: stretch;
         }
         .top {
             flex:auto;
             background-color:rgb(196, 255, 3);
             font-weight:bold;
-            min-height: 0;
         }
         .middle {
             flex:none;
-            height: max-content;
             font-size:20px;
             background-color:#f0f;
         }
@@ -48,7 +43,6 @@
             z-index: 10;
             padding:10px;
             flex:none;
-            height: max-content;
             background-color: #000;
             color:#fff;
             text-align: center;
