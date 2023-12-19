@@ -70,8 +70,10 @@
         </div>
     </main>
     <script>
-        console.log('aa');
-        document.querySelector('body').style.height = window.innerHeight + 'px';
+        window.onresize = function() {
+            document.body.height = window.innerHeight;
+        }
+        window.onresize();
     </script>
 </body>
 </html>
