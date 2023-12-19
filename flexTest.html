@@ -12,12 +12,16 @@
             padding:0;
         }
         body {
-            height:100dvh;
+            /* min-height:-webkit-fill-available; */
+            height: -webkit-fill-available;
+            height: fill-available;
         }
         .wrap {
             display:flex;
             flex-direction: column;
             min-height:100%;
+            height: -webkit-fill-available;
+            height: fill-available;
             background: #0f0;
         }
         .content {
