@@ -27,7 +27,9 @@
         .content {
             display:flex;
             flex-direction: column;
-            flex:auto;
+            flex:1;
+            height: -webkit-fill-available;
+            height: fill-available;
         }
         .top {
             flex:auto;
@@ -55,6 +57,7 @@
 </head>
 <body>
     <main class="wrap">
+        <div class="content">
             <div class="top">
                 실명인증을 위해 고객 정보를 <br />
                 입력해 주세요.
@@ -65,6 +68,7 @@
                 주민등록번호<br />
                 휴대폰번호
             </div>
+        </div>
         <div class="bottom">
             확인
         </div>
