@@ -12,39 +12,31 @@
             padding:0;
         }
         .wrap {
-            display: box;
-            display: -webkit-box;
-            display: -webkit-flex;
-            display: -ms-flexbox;
-            display: flex;
+            display:flex;
             flex-direction: column;
             min-height:100%;
             background: #0f0;
             align-items: stretch;
-            box-orient: vertical;
         }
         .content {
-            display: -webkit-box;
-            display: -webkit-flex;
-            display: -ms-flexbox;
-            display: flex;
+            display:flex;
             flex-direction: column;
             flex:auto;
             align-items: stretch;
-            box-orient: vertical;
         }
         .top {
             flex:auto;
+            height: max-content;
             background-color:rgb(196, 255, 3);
             font-weight:bold;
+            min-height: 0;
         }
         .middle {
-            flex: 0 1 auto;
+            flex:none;
             font-size:20px;
             background-color:#f0f;
         }
         .bottom {
-            flex: 0 1 auto;
             position: sticky;
             position: -webkit-sticky;
             left:0;
@@ -60,15 +52,15 @@
 </head>
 <body>
     <main class="wrap">
-        <div class="top">
-            실명인증을 위해 고객 정보를 <br />
-            입력해 주세요.
-        </div>
-        <div class="middle">
-            이름<br />
-            주민등록번호<br />
-            휴대폰번호
-        </div>
+            <div class="top">
+                실명인증을 위해 고객 정보를 <br />
+                입력해 주세요.
+            </div>
+            <div class="middle">
+                이름<br />
+                주민등록번호<br />
+                휴대폰번호
+            </div>
         <div class="bottom">
             확인
         </div>
