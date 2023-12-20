@@ -10,14 +10,20 @@
             height:100%;
             margin:0;
             padding:0;
-            position: relative;
-            min-height: 100dvh;
+        }
+        html {
+            height: -webkit-fill-available;
+        }
+        body {
+            min-height: 100vh;
+            /* mobile viewport bug fix */
+            min-height: -webkit-fill-available;
         }
         .wrap {
             display:flex;
             flex-direction: column;
             background: #0f0;
-            height:100dvh;
+            height:100%;
             height: -webkit-fill-available;
             height: fill-available;
         }
