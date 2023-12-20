@@ -5,6 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>flex</title>
     <style>
+        html {
+            height: -webkit-fill-available;
+        }
+        body {
+            min-height: 100vh;
+            min-height: -webkit-fill-available;
+        }
         html,
         body {
             height:100%;
@@ -16,6 +23,8 @@
             flex-direction: column;
             background: #0f0;
             height:100dvh;
+            height: -webkit-fill-available;
+            height: fill-available;
         }
         .top {
             flex:auto;
