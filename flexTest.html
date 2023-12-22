@@ -20,25 +20,31 @@
             min-height: -webkit-fill-available;
         }
         .wrap {
-            /* display:flex;
-            flex-direction: column; */
+            display:flex;
+            display: -webkit-box;
+            flex-direction: column;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -webkit-flex-direction: column;
+            align-items: stretch;
             background: #0f0;
             height:100%;
             height: -webkit-fill-available;
             height: fill-available;
         }
         .top {
-            /* flex:1; */
+            flex:auto;
             min-height:307px; 
             background-color:rgb(196, 255, 3);
             font-weight:bold;
         }
         .middle {
-            /* flex:none; */
+            flex:none;
             font-size:20px;
             background-color:#f0f;
         }
         .bottom {
+            flex:none;
             position: sticky;
             position: -webkit-sticky;
             left:0;
